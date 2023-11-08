@@ -1,0 +1,102 @@
+/*width — ширина элемента;*/
+/*height — высота элемента;*/
+
+/*padding — внутренние отступы от контента до краёв элемента,  увеличивает пространство между границей поля и содержимым поля. Например:
+.box {
+ padding: 20px; - отступы между содержимым полем и границей поля
+ width: 400px; - ширина самого поля
+ box-sizing: border-box;  -  (альтернативная модель, а не блочная) это позволяет не увеличивать размер саомого поля, когда мы увеличиваем отступы padding, при это уменьшая доступное простарнство для содержимого
+
+/*border — рамка, идущая по краю элемента, добавляет пробел (даже если это всего один или два пикселя) между полем и отступом.;*/
+/*margin — внешние отступы вокруг элемента, увеличивает пространство между границами блока и границами соседних блоков..
+display: inline-block;  - (создает встроенный блок) применется для аргумента, напрмиер <article>, внутри которго вложены <p>-элементы и команда "дсиплей" объединяет блоки "п" в один
+
+html {
+  box-sizing: border-box;   }- это наследование размеров всеми дочерними элементами страницы
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+*/
+
+.main-div {
+    background-color: #e8d6b9;
+    width: 75%;
+    margin: auto;
+}
+
+strong {
+    writing-mode: vertical-lr;
+}
+
+/* Выравнивание картинки */
+img {
+    display: block;
+    margin: auto;
+}
+
+.find {
+    color: #ea0b0b;
+    transition: color 0.6s;
+}
+a.find:hover {color: black}
+a.find:active {color: white}
+
+
+li {
+    margin: 0 20px 0 0;
+    /*display: grid;*/
+}
+
+#mer1 {
+    width: 500px;
+    margin: 20px auto;
+    padding: 0 0 0 50px;
+}
+#mer2 {
+    margin: 10px 0 0 0;
+}
+
+body {
+    background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+}
+
+
+/** {*/
+/*    border: black solid 1px;*/
+/*}*/
+
+#poker {
+    color: #ea0b0b;
+    text-align: center;  /* Выравнеивание текста */
+}
+
+button {
+    /*border: none;*/
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2f742a;
+    height: 50px;
+    width: 90px;
+    cursor: pointer;
+    color: #000000; /* цвет текста */
+    background: rgb(16, 164, 69); /* фон кнопки */
+    transition: background-color 0.6s;  /* настраивает анимированнаое изменение цвета кнопки при наведении курсора */
+}
+button:hover {background: #57e357; }
+button:active {background: darkgreen}
+
+a.knopka {
+    transition: background-color 0.6s;
+    font-weight: bold; /* Жирный текст */
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(212,75,56); /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+}
+a.knopka:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
